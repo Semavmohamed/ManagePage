@@ -1,0 +1,42 @@
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* globals.css */
+
+/* إقران إعدادات Tailwind مع إعدادات المشروع */
+
+/* لتغيير لون النقط */
+.swiper-pagination-bullet {
+  background-color: white !important; 
+  border: 2px solid #ff5733 !important;/* اختر اللون الذي تريده */
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff5733 !important; /* لون النقط عندما تكون نشطة */
+}
+
